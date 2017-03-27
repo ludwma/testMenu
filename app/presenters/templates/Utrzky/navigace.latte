@@ -1,0 +1,22 @@
+{block content}
+{* Navigace a prihlaseni *}
+<div class="col-lg-12 navigace">
+<a class="odkaz" n:href="Homepage:default">hlavní strana</a>
+<a class="odkaz" n:href="Administration:default">Administrace</a>
+</div>
+
+{* prihlasovaci formular a zprava kdyz je uzivatel prihlasen *}
+<div class="col-lg-12 loginform" n:if="!$user->isLoggedIn()">
+<form n:name=loginForm class="form">
+    <input n:name=jmeno placeholder="Uživatelské jméno">
+    <input n:name=heslo placeholder="heslo">
+<input n:name=odeslat value="Login">
+</form>
+</div>
+
+<div class="col-lg-12 ListaPrihlaseneho" n:if="$user->isLoggedIn()">
+    <h2>Vítejte {$user->identity->data[username]}</h2>
+    <form n:name=logOutForm>
+	<input type="submit" value="Odhlásit" n:name=odhlas>
+    </form>
+</div>

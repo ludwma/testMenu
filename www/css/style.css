@@ -1,0 +1,80 @@
+body {
+	font-size: 15px;
+	line-height: 1.6;
+	color: #333;
+	background: black;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+}
+h2{
+    margin-top: 10px;
+color: white;
+}
+h3{
+    color: white;
+}
+
+#ajax-spinner {
+	margin: 15px 0 0 15px;
+	padding: 13px;
+	background: white url('../images/spinner.gif') no-repeat 50% 50%;
+	font-size: 0;
+	z-index: 123456;
+	display: none;
+}
+
+div.flash {
+	color: black;
+	background: #FFF9D7;
+	border: 1px solid #E2C822;
+	padding: 1em;
+	margin: 1em 0;
+}
+
+a[href^="#error:"] {
+	background: red;
+	color: white;
+}
+
+form th, form td {
+	vertical-align: top;
+	font-weight: normal;
+}
+
+form th {
+	text-align: right;
+}
+
+form .required label {
+	font-weight: bold;
+}
+
+form .error {
+	color: #D00;
+	font-weight: bold;
+}
+
+.border{margin: 20px;width: 200px;border: 1px solid yellow;}
+.navigace{background-color: rgb(40,40,40);text-align: center;}
+.odkaz{color: white;margin: 10px; font-size: 30px;}
+.odkaz:hover{color: yellow;}
+.form{text-align: center;margin-bottom: 0px;}
+.loginform{background-color: rgb(60,60,60);padding-top: 10px;padding-bottom: 10px;}
+.ListaPrihlaseneho{background-color: rgb(60,60,60);padding-top: 10px;padding-bottom: 10px;text-align: center;}
+
+.bleskNe{color: white;background-color: red;padding: 5px;text-align: center;margin-top: 10px;}
+.blesk{color: white;background-color: green;padding: 5px;text-align: center;margin-top: 10px;}
+
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}

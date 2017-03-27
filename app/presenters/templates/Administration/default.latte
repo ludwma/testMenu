@@ -1,0 +1,31 @@
+{block content}
+{include '..\Utrzky\navigace.latte'}
+<div class="col-lg-12">
+<h1>Administrace menu</h1>
+<br>
+</div>
+
+<form n:name=pridatKategoriiForm class="form">
+<h2>Přidat kategorii</h2>
+<input type="text" placeholder="Jméno kategorie" n:name=name>
+<input type="text" placeholder="jméno nadkategorie" n:name=upname>
+<input type="submit" value="Vytvoř" n:name=submit>
+</form>
+
+<br>
+
+<form n:name=upravitKategoriiForm class="form">
+<h2>Upravit kategorii</h2>
+<input type="text" placeholder="Jméno kategorie" n:name=oldname>
+<input type="text" placeholder="Nové jméno kategorie" n:name=name>
+<input type="text" placeholder="Nové jméno nadkategorie" n:name=upname>
+<input type="submit" value="Uprav" n:name=submit>
+</form>
+
+<br>
+
+<form n:name=odstranKategoriiForm class="form">
+    <h1>Odstranit kategorii</h1>
+    <input placeholder="Jméno" n:name=jmeno>
+    <input value="odstraň" n:name=submit>
+</form>
